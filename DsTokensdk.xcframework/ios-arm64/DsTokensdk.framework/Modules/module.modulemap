@@ -1,0 +1,11 @@
+framework module DsTokensdk {
+  umbrella header "dstokensdk.h"
+
+  export *
+  module * { export * }
+}
+
+module DsTokensdk.Swift {
+  header "DsTokensdk-Swift.h"
+  requires objc
+}
