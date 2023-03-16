@@ -1,4 +1,4 @@
-# DsTokensdk
+# DsToken
 
 Install into your project:
 
