@@ -7,3 +7,6 @@ Install into your project:
 https://github.com/DevelSystems/DSToken-iOS
 
 
+# Usage
+You can now import DsToken framework
+
