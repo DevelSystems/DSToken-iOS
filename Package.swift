@@ -4,22 +4,19 @@
 import PackageDescription
 
 let package = Package(
-    name: "DsTokensdk",
-    products: [
-    
-        .library(
-            name: "DsTokensdk",
-            targets: ["DsTokensdk"]),
-    ],
-    dependencies: [
-      
-    ],
-    targets: [
-       
-        .binaryTarget(
-            name: "DsTokensdk",
-            path: "DsTokensdk"
-        
-       
-    ]
+    name: "DsToken",
+    platforms: [.iOS(.v10)],
+    products: [
+        .library(
+            name: "DsToken",
+            targets: ["DsToken"]),
+    ],
+    dependencies: [
+        
+    ],
+    targets: [
+            .binaryTarget(
+                name: "DsToken",
+                path: "DsToken.xcframework")
+        ]
 )
