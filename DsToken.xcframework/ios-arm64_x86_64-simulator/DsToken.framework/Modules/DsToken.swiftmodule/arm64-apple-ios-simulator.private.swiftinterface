@@ -1,0 +1,85 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios15.5-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name DsToken
+import CoreData
+import CryptoKit
+@_exported import DsToken
+import Foundation
+import Security
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public enum Environment : Swift.String {
+  case DEVELOPMENT
+  case QA
+  case PRODUCTION
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public class DSTokenProvider {
+  public init(env: DsToken.Environment)
+  public func SyncToken(data: Swift.String, deviceId: Swift.String, deviceIdPushOtp: Swift.String, alias: Swift.String, response: @escaping DsToken.responseSyncToken)
+  public func ReSyncToken(deviceId: Swift.String, deviceIdPushOtp: Swift.String, response: @escaping DsToken.response)
+  public func GetTokenType(channel: Swift.String, userName: Swift.String, codeUser: Swift.String, country: Swift.String, response: @escaping DsToken.response)
+  public func GenerateOtp(channel: Swift.String, userName: Swift.String, codeUser: Swift.String, country: Swift.String, response: @escaping DsToken.responseGenerate)
+  public func GenerateTokenList(response: @escaping DsToken.responseGenerateList)
+  public func GenerateOtpById(id: Swift.String, response: @escaping DsToken.responseGenerate)
+  public func EditToken(id: Swift.String, alias: Swift.String, response: @escaping DsToken.response)
+  public func DeleteToken(id: Swift.String, response: @escaping DsToken.responseDeleteToken)
+  @objc deinit
+}
+public typealias response = (Swift.String, Swift.String) -> Swift.Void
+public typealias responseSyncToken = (Swift.String, Swift.String, Swift.String) -> Swift.Void
+public typealias responseDeleteToken = (Swift.String, Swift.String, Swift.String) -> Swift.Void
+public typealias responseLimitUser = (Swift.String, Swift.String, Swift.String) -> Swift.Void
+public typealias responseGenerate = (Swift.String, Swift.String, Swift.String, Swift.String, Swift.String) -> Swift.Void
+public typealias responseGenerateList = (Swift.String, Swift.String, Swift.String) -> Swift.Void
+@_inheritsConvenienceInitializers @objc(Token) public class Token : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension DsToken.Token {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<DsToken.Token>
+  @objc @NSManaged dynamic public var channel: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var country: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var id: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var seed: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var tokenName: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var userCode: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var userName: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var userType: Swift.String? {
+    @objc get
+    @objc set
+  }
+}
+extension DsToken.Token : Swift.Identifiable {
+  public typealias ID = Swift.String?
+}
+extension DsToken.Environment : Swift.Equatable {}
+extension DsToken.Environment : Swift.Hashable {}
+extension DsToken.Environment : Swift.RawRepresentable {}
