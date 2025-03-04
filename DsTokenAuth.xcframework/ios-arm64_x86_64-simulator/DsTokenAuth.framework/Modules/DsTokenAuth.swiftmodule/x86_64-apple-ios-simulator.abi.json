@@ -1,0 +1,1602 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DsTokenAuth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DsTokenAuth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Environment",
+        "printedName": "Environment",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "DEVELOPMENT",
+            "printedName": "DEVELOPMENT",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DsTokenAuth.Environment.Type) -> DsTokenAuth.Environment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Environment",
+                    "printedName": "DsTokenAuth.Environment",
+                    "usr": "s:11DsTokenAuth11EnvironmentO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DsTokenAuth.Environment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Environment",
+                        "printedName": "DsTokenAuth.Environment",
+                        "usr": "s:11DsTokenAuth11EnvironmentO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11DsTokenAuth11EnvironmentO11DEVELOPMENTyA2CmF",
+            "mangledName": "$s11DsTokenAuth11EnvironmentO11DEVELOPMENTyA2CmF",
+            "moduleName": "DsTokenAuth",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "QA",
+            "printedName": "QA",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DsTokenAuth.Environment.Type) -> DsTokenAuth.Environment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Environment",
+                    "printedName": "DsTokenAuth.Environment",
+                    "usr": "s:11DsTokenAuth11EnvironmentO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DsTokenAuth.Environment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Environment",
+                        "printedName": "DsTokenAuth.Environment",
+                        "usr": "s:11DsTokenAuth11EnvironmentO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11DsTokenAuth11EnvironmentO2QAyA2CmF",
+            "mangledName": "$s11DsTokenAuth11EnvironmentO2QAyA2CmF",
+            "moduleName": "DsTokenAuth",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "PRODUCTION",
+            "printedName": "PRODUCTION",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DsTokenAuth.Environment.Type) -> DsTokenAuth.Environment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Environment",
+                    "printedName": "DsTokenAuth.Environment",
+                    "usr": "s:11DsTokenAuth11EnvironmentO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DsTokenAuth.Environment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Environment",
+                        "printedName": "DsTokenAuth.Environment",
+                        "usr": "s:11DsTokenAuth11EnvironmentO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11DsTokenAuth11EnvironmentO10PRODUCTIONyA2CmF",
+            "mangledName": "$s11DsTokenAuth11EnvironmentO10PRODUCTIONyA2CmF",
+            "moduleName": "DsTokenAuth",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "DsTokenAuth.Environment?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Environment",
+                    "printedName": "DsTokenAuth.Environment",
+                    "usr": "s:11DsTokenAuth11EnvironmentO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11DsTokenAuth11EnvironmentO8rawValueACSgSS_tcfc",
+            "mangledName": "$s11DsTokenAuth11EnvironmentO8rawValueACSgSS_tcfc",
+            "moduleName": "DsTokenAuth",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11DsTokenAuth11EnvironmentO8rawValueSSvp",
+            "mangledName": "$s11DsTokenAuth11EnvironmentO8rawValueSSvp",
+            "moduleName": "DsTokenAuth",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11DsTokenAuth11EnvironmentO8rawValueSSvg",
+                "mangledName": "$s11DsTokenAuth11EnvironmentO8rawValueSSvg",
+                "moduleName": "DsTokenAuth",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:11DsTokenAuth11EnvironmentO",
+        "mangledName": "$s11DsTokenAuth11EnvironmentO",
+        "moduleName": "DsTokenAuth",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DsTokenAuth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DsTokenAuth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DsTokenAuth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DsTokenAuth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CommonCrypto",
+        "printedName": "CommonCrypto",
+        "declKind": "Import",
+        "moduleName": "DsTokenAuth"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DsTokenAuth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DsTokenAuth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DsTokenAuth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DsTokenAuth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DsTokenAuth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "LocalAuthentication",
+        "printedName": "LocalAuthentication",
+        "declKind": "Import",
+        "moduleName": "DsTokenAuth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DsTokenAuth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Security",
+        "printedName": "Security",
+        "declKind": "Import",
+        "moduleName": "DsTokenAuth"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DsTokenAuth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DsTokenAuth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DsTokenAuth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DsTokenAuth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DsTokenAuth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DsTokenAuth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DsTokenAuth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CommonCrypto",
+        "printedName": "CommonCrypto",
+        "declKind": "Import",
+        "moduleName": "DsTokenAuth"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DsTokenAuth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DsTokenAuth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Security",
+        "printedName": "Security",
+        "declKind": "Import",
+        "moduleName": "DsTokenAuth"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DsTokenAuth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DsTokenAuth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DsTokenAuth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DsTokenAuth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DsTokenAuth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DsTokenAuth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DsTokenAuth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DsTokenAuth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DsTokenAuth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DsTokenAuth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Security",
+        "printedName": "Security",
+        "declKind": "Import",
+        "moduleName": "DsTokenAuth"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DsTokenAuth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DsTokenAuth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "LocalAuthentication",
+        "printedName": "LocalAuthentication",
+        "declKind": "Import",
+        "moduleName": "DsTokenAuth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DsTokenAuth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DsTokenAuth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DsTokenAuth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DSTokenAuthProvider",
+        "printedName": "DSTokenAuthProvider",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(env:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DSTokenAuthProvider",
+                "printedName": "DsTokenAuth.DSTokenAuthProvider",
+                "usr": "s:11DsTokenAuth07DSTokenC8ProviderC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Environment",
+                "printedName": "DsTokenAuth.Environment",
+                "usr": "s:11DsTokenAuth11EnvironmentO"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11DsTokenAuth07DSTokenC8ProviderC3envAcA11EnvironmentO_tcfc",
+            "mangledName": "$s11DsTokenAuth07DSTokenC8ProviderC3envAcA11EnvironmentO_tcfc",
+            "moduleName": "DsTokenAuth",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "Enrollment",
+            "printedName": "Enrollment(data:deviceId:response:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String, Swift.String) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.String, Swift.String)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11DsTokenAuth07DSTokenC8ProviderC10Enrollment4data8deviceId8responseySS_SSySS_SStctF",
+            "mangledName": "$s11DsTokenAuth07DSTokenC8ProviderC10Enrollment4data8deviceId8responseySS_SSySS_SStctF",
+            "moduleName": "DsTokenAuth",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "Authenticate",
+            "printedName": "Authenticate(data:deviceId:response:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.String, Swift.String) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.String, Swift.String)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11DsTokenAuth07DSTokenC8ProviderC12Authenticate4data8deviceId8responseySS_SSySS_SStctF",
+            "mangledName": "$s11DsTokenAuth07DSTokenC8ProviderC12Authenticate4data8deviceId8responseySS_SSySS_SStctF",
+            "moduleName": "DsTokenAuth",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:11DsTokenAuth07DSTokenC8ProviderC",
+        "mangledName": "$s11DsTokenAuth07DSTokenC8ProviderC",
+        "moduleName": "DsTokenAuth",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DsTokenAuth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DsTokenAuth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DsTokenAuth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DsTokenAuth",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Utils\/Logger\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 136,
+      "length": 7,
+      "value": "\"DEBUG\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Utils\/Logger\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 160,
+      "length": 6,
+      "value": "\"INFO\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Utils\/Logger\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 185,
+      "length": 8,
+      "value": "\"SUCESS\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Utils\/Logger\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 213,
+      "length": 9,
+      "value": "\"WARNING\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Utils\/Logger\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 240,
+      "length": 7,
+      "value": "\"ERROR\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Utils\/Logger\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 136,
+      "length": 7,
+      "value": "\"DEBUG\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Utils\/Logger\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 160,
+      "length": 6,
+      "value": "\"INFO\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Utils\/Logger\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 185,
+      "length": 8,
+      "value": "\"SUCESS\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Utils\/Logger\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 213,
+      "length": 9,
+      "value": "\"WARNING\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Utils\/Logger\/Logger.swift",
+      "kind": "StringLiteral",
+      "offset": 240,
+      "length": 7,
+      "value": "\"ERROR\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Configs\/ApiConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 188,
+      "length": 5,
+      "value": "\"DEV\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Configs\/ApiConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 248,
+      "length": 4,
+      "value": "\"QA\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Configs\/ApiConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 311,
+      "length": 6,
+      "value": "\"PROD\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Configs\/ApiConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 188,
+      "length": 5,
+      "value": "\"DEV\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Configs\/ApiConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 248,
+      "length": 4,
+      "value": "\"QA\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Configs\/ApiConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 311,
+      "length": 6,
+      "value": "\"PROD\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Configs\/ApiConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 407,
+      "length": 48,
+      "value": "\"https:\/\/api-passwordless.dstokenonline.com\/api\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Configs\/ApiConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 487,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Configs\/ApiConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 523,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Configs\/ApiConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 567,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Configs\/ApiConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 605,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Configs\/ApiConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 645,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Configs\/ApiConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 681,
+      "length": 21,
+      "value": "\"\/Passkey\/enrollment\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Configs\/ApiConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 733,
+      "length": 23,
+      "value": "\"\/Passkey\/authenticate\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Domain\/Entities\/QrDataEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 381,
+      "length": 6,
+      "value": "\"Type\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Domain\/Entities\/QrDataEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 413,
+      "length": 11,
+      "value": "\"Challenge\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Domain\/Entities\/QrDataEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 447,
+      "length": 8,
+      "value": "\"Origin\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Domain\/Entities\/QrDataEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 480,
+      "length": 10,
+      "value": "\"UserName\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Domain\/Entities\/QrDataEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 519,
+      "length": 14,
+      "value": "\"Installation\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Domain\/Entities\/QrDataEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 557,
+      "length": 9,
+      "value": "\"Channel\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Domain\/Entities\/QrDataEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 590,
+      "length": 9,
+      "value": "\"Country\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Domain\/Entities\/QrDataEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 381,
+      "length": 6,
+      "value": "\"Type\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Domain\/Entities\/QrDataEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 413,
+      "length": 11,
+      "value": "\"Challenge\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Domain\/Entities\/QrDataEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 447,
+      "length": 8,
+      "value": "\"Origin\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Domain\/Entities\/QrDataEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 480,
+      "length": 10,
+      "value": "\"UserName\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Domain\/Entities\/QrDataEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 519,
+      "length": 14,
+      "value": "\"Installation\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Domain\/Entities\/QrDataEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 557,
+      "length": 9,
+      "value": "\"Channel\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Domain\/Entities\/QrDataEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 590,
+      "length": 9,
+      "value": "\"Country\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Models\/Response\/AdministrativeModel.swift",
+      "kind": "StringLiteral",
+      "offset": 265,
+      "length": 6,
+      "value": "\"code\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Models\/Response\/AdministrativeModel.swift",
+      "kind": "StringLiteral",
+      "offset": 295,
+      "length": 9,
+      "value": "\"message\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Models\/Response\/AdministrativeModel.swift",
+      "kind": "StringLiteral",
+      "offset": 326,
+      "length": 7,
+      "value": "\"token\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Models\/Response\/AdministrativeModel.swift",
+      "kind": "StringLiteral",
+      "offset": 265,
+      "length": 6,
+      "value": "\"code\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Models\/Response\/AdministrativeModel.swift",
+      "kind": "StringLiteral",
+      "offset": 295,
+      "length": 9,
+      "value": "\"message\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Models\/Response\/AdministrativeModel.swift",
+      "kind": "StringLiteral",
+      "offset": 326,
+      "length": 7,
+      "value": "\"token\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Utils\/Security\/SwiftRSA\/PublicKey.swift",
+      "kind": "StringLiteral",
+      "offset": 2213,
+      "length": 57,
+      "value": "\"(-----BEGIN PUBLIC KEY-----.+?-----END PUBLIC KEY-----)\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Utils\/Security\/SwiftRSA\/SwiftyRSA.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4731,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Configs\/ApiBankConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 168,
+      "length": 57,
+      "value": "\"http:\/\/apigateway-dev.smartbankingonline.com\/json\/reply\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Configs\/ApiBankConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 257,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Configs\/ApiBankConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 293,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Configs\/ApiBankConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 337,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Configs\/ApiBankConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 375,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Configs\/ApiBankConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 415,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Configs\/ApiBankConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 449,
+      "length": 28,
+      "value": "\"\/PostAuthenticationService\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Configs\/EncryptConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 137,
+      "length": 394,
+      "value": "\"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAycfO8KbpVFTSto9B\/rQD2Uqqp5bnOZ1dAmzTo6mP4Bupo72R4mI8d5YIXxfWpGkpK9Oa54D3kQYWWi2wS7bJa2Gfr6ymsqdw3QRYqfKeMb7OrNCTdt6oh6cvPrl7HvQX6\/a6wFxzs7JwwEhYge7h3wXpqlUBBn37ZURrgwxVOluf5LUAoKR7wCvOwuYUPzv+sY4usOu758thYr7j9U4q1auvx68a2bVa0pcW6SPLpxMLDfMD69QPNFSN0cdlTqPhgT9gNzaKXHJpSvxVecPy+Q6YIyjPhi9j4zdWV\/pIhSETvjzg2wP23q1uW0u6vVIPeZEWmR99w3J\/32Yn5vGn2wIDAQAB\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Configs\/EncryptConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 565,
+      "length": 1594,
+      "value": "\"MIIEpAIBAAKCAQEAycfO8KbpVFTSto9B\/rQD2Uqqp5bnOZ1dAmzTo6mP4Bupo72R4mI8d5YIXxfWpGkpK9Oa54D3kQYWWi2wS7bJa2Gfr6ymsqdw3QRYqfKeMb7OrNCTdt6oh6cvPrl7HvQX6\/a6wFxzs7JwwEhYge7h3wXpqlUBBn37ZURrgwxVOluf5LUAoKR7wCvOwuYUPzv+sY4usOu758thYr7j9U4q1auvx68a2bVa0pcW6SPLpxMLDfMD69QPNFSN0cdlTqPhgT9gNzaKXHJpSvxVecPy+Q6YIyjPhi9j4zdWV\/pIhSETvjzg2wP23q1uW0u6vVIPeZEWmR99w3J\/32Yn5vGn2wIDAQABAoIBAQCnXvZ3RWv7iJRz26aZOAaNQdMGSjSn5LDWpyBx+98cvLVc3YzZpDSV2Tw+bI6dN6Fv+gjeiGpRwCPgT0+Rrh+q04JafLKVNDB5E\/bbmSTBDI1waV44Vn6ibvnQZJgM19nT34eOseFDJ\/tAc4H+3QA8NzJYGEROd0eE+1jWje9QBGBfJIrr4A9Utw7XLSxRKNq3pisW69gpzrX12NPrauyQLmfK9S64K4N5J7gNmd746THTjYf30g6oUDdt3K8C5l6yelXJf9M8hEDrTI8wModq+l8ok9haG\/XclqLyhZJjth1QaTDPqxux5XcigoUMV51gwobnoRDOt+Y7xo3ZEIDZAoGBAPLaY5BXNme3WOn72bI+aLrYr3Z90pWujJL1J5zY0LtdVqfvAcIxcAj00MBsCg1ZAd0Yv4ga5zqWplNekWeNEwhSWtSyHt2EvRPVrwBMuk6O+rqrwNHEf4cXSMRqPRfWyPfeg3I93\/UTTMa8gmxSdTX7ay0aqLUiXdWwWX9KKDCVAoGBANS0NbD9ddfFaeS3F+UHAMQ25noWuasvu7TXDkbx\/8OlxZ1xlj1QTjGXMjnZpH6If7Fjw23Z\/FEo8rT00Y62uSqOH4vKAnTcrwfhR0Y5pUtiKY4odc78BOIyDytx7h\/eHgK5WKHZ6fy7Ylhh5H608hSKVz9zjE7DmKRYiMhHgCqvAoGBAI8VdvXzPH3NO9jYZ0IqnSABTRgeN\/Wy2uY3BPjXkdviuYzGOB4HbMAKJfhJb36\/w2ZWD3sMhtIxMpwKKtd8+gq8IwIQVDkl3RUToEEn89kXSsizKy8sfArHADuhcI9cIBpSgtXLeOl3TpQFOz7BMof0swfnHiFitzCQ75ocwiMlAoGAeGWpHo3ZblEoJ3Yb6F+WZ3pL6z+ByQwzy6EPS8kfZLcorH3m9L3IBPn4TBaNrbHF1bsKm9uPnsD24MbS910mYpgf8xhdW5iu2l8B4RYwIgNmUjlEteyhNwfu3kCW8SLhCdmv+a1HbO8EM9L1a2Mww7+qsxfMi6jbdetHQVZ3jbECgYA1kezE8o8YkR+kWAp64ZxSeMMOH\/Q1RVSMp5IWcx4OxJCT0aEB9iJPdqRcHhIuyiKdeLcSS6o8u5sTQf2kKI5aGoBqjUcVXdZJyiOGNBgTfbHKEVyUEz+Zn\/hOjZ1FINHuSxjTq\/jrS5QL0HE25oOvZmmrFo\/\/JumPIiTauf7oYw==\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Utils\/Security\/SwiftRSA\/Asn1Parser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 372,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Configs\/MessagesConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 205,
+      "length": 17,
+      "value": "\"URL mal formado\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Configs\/MessagesConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 257,
+      "length": 18,
+      "value": "\"BODY mal formado\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Configs\/MessagesConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 310,
+      "length": 28,
+      "value": "\"Respuesta JSON mal formado\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Configs\/MessagesConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 372,
+      "length": 24,
+      "value": "\"Petición no realizada\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Configs\/MessagesConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 459,
+      "length": 35,
+      "value": "\"Creación de credenciales Exitosa\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Configs\/MessagesConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 531,
+      "length": 35,
+      "value": "\"Creación de credenciales Fallida\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Configs\/MessagesConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 607,
+      "length": 40,
+      "value": "\"Autenticación de credenciales Exitosa\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Configs\/MessagesConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 686,
+      "length": 40,
+      "value": "\"Autenticación de credenciales Fallida\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Configs\/MessagesConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 766,
+      "length": 24,
+      "value": "\"Parámetros inválidos\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Configs\/MessagesConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 841,
+      "length": 52,
+      "value": "\"El dispositivo no cuenta con un factor biométrico\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Configs\/MessagesConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 924,
+      "length": 31,
+      "value": "\"El QR escaneado no es válido\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Configs\/MessagesConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 990,
+      "length": 51,
+      "value": "\"El QR escaneado no es de un tipo de flujo válido\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Configs\/MessagesConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1076,
+      "length": 44,
+      "value": "\"El QR escaneado no contiene datos válidos\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Configs\/MessagesConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1157,
+      "length": 25,
+      "value": "\"Hubo un error al firmar\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Configs\/MessagesConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1220,
+      "length": 27,
+      "value": "\"Transacción no realizada\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Configs\/MessagesConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1314,
+      "length": 46,
+      "value": "\"No se logró establecer el control de acceso\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Configs\/MessagesConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1398,
+      "length": 31,
+      "value": "\"No se logró generar la llave\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Configs\/MessagesConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1466,
+      "length": 33,
+      "value": "\"No se logró recuperar la llave\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Configs\/MessagesConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1535,
+      "length": 32,
+      "value": "\"No se logró eliminar la llave\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Configs\/MessagesConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1602,
+      "length": 35,
+      "value": "\"No se logró transformar la llave\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Configs\/MessagesConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1675,
+      "length": 32,
+      "value": "\"No se logró realizar la firma\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Configs\/MessagesConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1760,
+      "length": 28,
+      "value": "\"Autenticación por PassKey\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Configs\/MessagesConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1827,
+      "length": 30,
+      "value": "\"La autenticación ha fallado\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Configs\/MessagesConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1886,
+      "length": 39,
+      "value": "\"El usuario canceló la autenticación\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Configs\/MessagesConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1956,
+      "length": 52,
+      "value": "\"El usuario eligió utilizar un método alternativo\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Configs\/MessagesConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 2047,
+      "length": 71,
+      "value": "\"La autenticación biométrica no está disponible en este dispositivo\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Configs\/MessagesConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 2156,
+      "length": 38,
+      "value": "\"No hay datos biométrios registrados\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Configs\/MessagesConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 2228,
+      "length": 80,
+      "value": "\"La autenticación biométrica esta bloqueada por demasidados intentos fallidos\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Configs\/MessagesConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 2353,
+      "length": 30,
+      "value": "\"Autenticación no disponible\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Utils\/HttpClient\/HttpClient.swift",
+      "kind": "StringLiteral",
+      "offset": 141,
+      "length": 6,
+      "value": "\"POST\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Utils\/HttpClient\/HttpClient.swift",
+      "kind": "StringLiteral",
+      "offset": 163,
+      "length": 5,
+      "value": "\"GET\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Utils\/HttpClient\/HttpClient.swift",
+      "kind": "StringLiteral",
+      "offset": 184,
+      "length": 5,
+      "value": "\"PUT\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Utils\/HttpClient\/HttpClient.swift",
+      "kind": "StringLiteral",
+      "offset": 208,
+      "length": 8,
+      "value": "\"DELETE\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Utils\/HttpClient\/HttpClient.swift",
+      "kind": "StringLiteral",
+      "offset": 141,
+      "length": 6,
+      "value": "\"POST\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Utils\/HttpClient\/HttpClient.swift",
+      "kind": "StringLiteral",
+      "offset": 163,
+      "length": 5,
+      "value": "\"GET\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Utils\/HttpClient\/HttpClient.swift",
+      "kind": "StringLiteral",
+      "offset": 184,
+      "length": 5,
+      "value": "\"PUT\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Utils\/HttpClient\/HttpClient.swift",
+      "kind": "StringLiteral",
+      "offset": 208,
+      "length": 8,
+      "value": "\"DELETE\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Models\/Response\/ResponseStatusModel.swift",
+      "kind": "StringLiteral",
+      "offset": 237,
+      "length": 16,
+      "value": "\"ResponseStatus\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Models\/Response\/ResponseStatusModel.swift",
+      "kind": "StringLiteral",
+      "offset": 237,
+      "length": 16,
+      "value": "\"ResponseStatus\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Models\/Response\/ResponseStatusModel.swift",
+      "kind": "StringLiteral",
+      "offset": 533,
+      "length": 11,
+      "value": "\"ErrorCode\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Models\/Response\/ResponseStatusModel.swift",
+      "kind": "StringLiteral",
+      "offset": 568,
+      "length": 9,
+      "value": "\"Message\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Models\/Response\/ResponseStatusModel.swift",
+      "kind": "StringLiteral",
+      "offset": 600,
+      "length": 8,
+      "value": "\"Errors\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Models\/Response\/ResponseStatusModel.swift",
+      "kind": "StringLiteral",
+      "offset": 533,
+      "length": 11,
+      "value": "\"ErrorCode\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Models\/Response\/ResponseStatusModel.swift",
+      "kind": "StringLiteral",
+      "offset": 568,
+      "length": 9,
+      "value": "\"Message\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Models\/Response\/ResponseStatusModel.swift",
+      "kind": "StringLiteral",
+      "offset": 600,
+      "length": 8,
+      "value": "\"Errors\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Models\/Response\/ResponseModel.swift",
+      "kind": "StringLiteral",
+      "offset": 244,
+      "length": 21,
+      "value": "\"administrativeModel\""
+    },
+    {
+      "filePath": "\/Users\/jlopez\/Documents\/repos\/demo\/DSToken.iOSSDK.Auth\/DsTokenAuth\/Infraestructure\/Models\/Response\/ResponseModel.swift",
+      "kind": "StringLiteral",
+      "offset": 244,
+      "length": 21,
+      "value": "\"administrativeModel\""
+    }
+  ]
+}
