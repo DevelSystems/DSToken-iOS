@@ -1,0 +1,6 @@
+framework module DsTokenAuth {
+  umbrella header "DsTokenAuth.h"
+  export *
+
+  module * { export * }
+}

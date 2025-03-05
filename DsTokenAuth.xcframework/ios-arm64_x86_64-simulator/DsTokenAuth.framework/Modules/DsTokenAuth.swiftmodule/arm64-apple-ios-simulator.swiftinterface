@@ -1,0 +1,32 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios15.5-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name DsTokenAuth
+import CommonCrypto
+@_exported import DsTokenAuth
+import Foundation
+import LocalAuthentication
+import Security
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public enum Environment : Swift.String {
+  case DEVELOPMENT
+  case QA
+  case PRODUCTION
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public typealias response = (Swift.String, Swift.String) -> Swift.Void
+public class DSTokenAuthProvider {
+  public init(env: DsTokenAuth.Environment)
+  public func Enrollment(data: Swift.String, deviceId: Swift.String, response: @escaping DsTokenAuth.response)
+  public func Authenticate(data: Swift.String, deviceId: Swift.String, response: @escaping DsTokenAuth.response)
+  @objc deinit
+}
+extension DsTokenAuth.Environment : Swift.Equatable {}
+extension DsTokenAuth.Environment : Swift.Hashable {}
+extension DsTokenAuth.Environment : Swift.RawRepresentable {}
