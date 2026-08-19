@@ -26,8 +26,6 @@ public enum Environment : Swift.String {
 }
 public class DSTokenProvider {
   public init(env: DsToken.Environment)
-  public func ValidateQR(data: Swift.String, response: @escaping DsToken.response)
-  public func GetLimitUser(response: @escaping DsToken.responseLimitUser)
   public func SyncToken(data: Swift.String, deviceId: Swift.String, deviceIdPushOtp: Swift.String, alias: Swift.String, response: @escaping DsToken.responseSyncToken)
   public func ReSyncToken(deviceId: Swift.String, deviceIdPushOtp: Swift.String, response: @escaping DsToken.response)
   public func GetTokenType(channel: Swift.String, userName: Swift.String, codeUser: Swift.String, country: Swift.String, response: @escaping DsToken.response)
@@ -92,6 +90,12 @@ extension DsToken.Token {
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var userName: Swift.String? {
+    @objc get
+    @objc set
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var userType: Swift.String? {
     @objc get
     @objc set
   }

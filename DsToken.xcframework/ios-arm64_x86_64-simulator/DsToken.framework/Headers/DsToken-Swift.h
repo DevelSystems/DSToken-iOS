@@ -320,6 +320,7 @@ SWIFT_CLASS_NAMED("Token")
 @property (nonatomic, copy) NSString * _Nullable tokenName;
 @property (nonatomic, copy) NSString * _Nullable userCode;
 @property (nonatomic, copy) NSString * _Nullable userName;
+@property (nonatomic, copy) NSString * _Nullable userType;
 @end
 
 #endif
@@ -652,6 +653,7 @@ SWIFT_CLASS_NAMED("Token")
 @property (nonatomic, copy) NSString * _Nullable tokenName;
 @property (nonatomic, copy) NSString * _Nullable userCode;
 @property (nonatomic, copy) NSString * _Nullable userName;
+@property (nonatomic, copy) NSString * _Nullable userType;
 @end
 
 #endif
