@@ -1,7 +1,7 @@
 framework module DsToken {
   umbrella header "DsToken.h"
-
   export *
+
   module * { export * }
 }
 

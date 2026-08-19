@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
-// swift-module-flags: -target arm64-apple-ios15.5-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name DsToken
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
+// swift-module-flags: -target arm64-apple-ios15.5-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name DsToken
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
 import CoreData
 import CryptoKit
 @_exported import DsToken
@@ -11,185 +11,97 @@ import Swift
 import UIKit
 import _Concurrency
 import _StringProcessing
-public struct ApproveTransactionModel : Swift.Codable {
-  public var channel: Swift.String
-  public var username: Swift.String
-  public var codeUser: Swift.String
-  public var uuId: Swift.String
-  public var transactionId: Swift.String
-  public var token: Swift.String
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+import _SwiftConcurrencyShims
+public enum Environment : Swift.String {
+  case DEVELOPMENT
+  case QA
+  case PRODUCTION
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
 }
-public struct TokenModel : Swift.Codable {
-  public var username: Swift.String
-  public var codeUser: Swift.String
-  public var channel: Swift.String
-  public var seed: Swift.String
-  public init(channel: Swift.String, username: Swift.String, codeUser: Swift.String, seed: Swift.String)
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
-}
-@objc @_inheritsConvenienceInitializers open class RSAUtils : ObjectiveC.NSObject {
-  @objc override dynamic public init()
+public class DSTokenProvider {
+  public init(env: DsToken.Environment)
+  public func ValidateQR(data: Swift.String, response: @escaping DsToken.response)
+  public func GetLimitUser(response: @escaping DsToken.responseLimitUser)
+  public func SyncToken(data: Swift.String, deviceId: Swift.String, deviceIdPushOtp: Swift.String, alias: Swift.String, response: @escaping DsToken.responseSyncToken)
+  public func ReSyncToken(deviceId: Swift.String, deviceIdPushOtp: Swift.String, response: @escaping DsToken.response)
+  public func GetTokenType(channel: Swift.String, userName: Swift.String, codeUser: Swift.String, country: Swift.String, response: @escaping DsToken.response)
+  public func GenerateOtp(channel: Swift.String, userName: Swift.String, codeUser: Swift.String, country: Swift.String, response: @escaping DsToken.responseGenerate)
+  public func GenerateTokenList(response: @escaping DsToken.responseGenerateList)
+  public func GenerateOtpById(id: Swift.String, response: @escaping DsToken.responseGenerate)
+  public func EditToken(id: Swift.String, alias: Swift.String, response: @escaping DsToken.response)
+  public func DeleteToken(id: Swift.String, response: @escaping DsToken.responseDeleteToken)
   @objc deinit
 }
-public struct TOTP {
-  public let secret: Foundation.Data
-  public let digits: Swift.Int
-  public let timeInterval: Swift.Int
-  public let algorithm: DsToken.OTPAlgorithm
-  public init?(secret: Foundation.Data, digits: Swift.Int = 6, timeInterval: Swift.Int = 30, algorithm: DsToken.OTPAlgorithm = .sha1)
-  public func generate(time: Foundation.Date) -> Swift.String?
-  public func generate(secondsPast1970: Swift.Int) -> Swift.String?
-}
-@_hasMissingDesignatedInitializers public class ValidateParam {
-  public func validateSyncParam(username: Swift.String, codeUser: Swift.String, channel: Swift.String, otp: Swift.String, deviceId: Swift.String, idOneSignal: Swift.String) -> Swift.Bool
-  public func validateReSyncParam(deviceId: Swift.String) -> Swift.Bool
-  public func validateApproveParam(username: Swift.String, codeUser: Swift.String, channel: Swift.String, uuid: Swift.String, transactionId: Swift.String, token: Swift.String) -> Swift.Bool
-  public func validateDeclineParam(username: Swift.String, codeUser: Swift.String, channel: Swift.String, uuid: Swift.String, transactionId: Swift.String) -> Swift.Bool
-  public func validateDeleteParam(username: Swift.String, codeUser: Swift.String, channel: Swift.String) -> Swift.Bool
-  public func validateGenerateParam(username: Swift.String, codeUser: Swift.String, channel: Swift.String) -> Swift.Bool
+public typealias response = (Swift.String, Swift.String) -> Swift.Void
+public typealias responseSyncToken = (Swift.String, Swift.String, Swift.String) -> Swift.Void
+public typealias responseDeleteToken = (Swift.String, Swift.String, Swift.String) -> Swift.Void
+public typealias responseLimitUser = (Swift.String, Swift.String, Swift.String) -> Swift.Void
+public typealias responseGenerate = (Swift.String, Swift.String, Swift.String, Swift.String, Swift.String) -> Swift.Void
+public typealias responseGenerateList = (Swift.String, Swift.String, Swift.String) -> Swift.Void
+public typealias TokenCoreDataClassSet = Foundation.NSSet
+@_inheritsConvenienceInitializers @objc(Token) nonisolated public class Token : CoreData.NSManagedObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  #endif
   @objc deinit
 }
-extension Foundation.Data {
-  public var bytes: Swift.Array<Swift.UInt8> {
-    get
-  }
-  public init(hex: Swift.String)
-}
-extension Swift.Array where Element == Swift.UInt8 {
-  public init(hex: Swift.String)
-  public func toHexString() -> Swift.String
-}
-public struct SyncDeviceModel : Swift.Codable {
-  public var channel: Swift.String
-  public var username: Swift.String
-  public var codeUser: Swift.String
-  public var otp: Swift.String
-  public var timeStamp: Swift.String
-  public var deviceId: Swift.String
-  public var idPushNotification: Swift.String
-  public init(channel: Swift.String, username: Swift.String, codeUser: Swift.String, otp: Swift.String, timeStamp: Swift.String, deviceId: Swift.String, idPushNotification: Swift.String)
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
-}
-public func base32Encode(_ data: Foundation.Data) -> Swift.String
-public func base32HexEncode(_ data: Foundation.Data) -> Swift.String
-public func base32DecodeToData(_ string: Swift.String) -> Foundation.Data?
-public func base32HexDecodeToData(_ string: Swift.String) -> Foundation.Data?
-public func base32Encode(_ array: [Swift.UInt8]) -> Swift.String
-public func base32HexEncode(_ array: [Swift.UInt8]) -> Swift.String
-public func base32Decode(_ string: Swift.String) -> [Swift.UInt8]?
-public func base32HexDecode(_ string: Swift.String) -> [Swift.UInt8]?
-extension Swift.String {
-  public var base32DecodedData: Foundation.Data? {
-    get
-  }
-  public var base32EncodedString: Swift.String {
-    get
-  }
-  public func base32DecodedString(_ encoding: Swift.String.Encoding = .utf8) -> Swift.String?
-  public var base32HexDecodedData: Foundation.Data? {
-    get
-  }
-  public var base32HexEncodedString: Swift.String {
-    get
-  }
-  public func base32HexDecodedString(_ encoding: Swift.String.Encoding = .utf8) -> Swift.String?
-}
-extension Foundation.Data {
-  public var base32EncodedString: Swift.String {
-    get
-  }
-  public var base32EncodedData: Foundation.Data {
-    get
-  }
-  public var base32DecodedData: Foundation.Data? {
-    get
-  }
-  public var base32HexEncodedString: Swift.String {
-    get
-  }
-  public var base32HexEncodedData: Foundation.Data {
-    get
-  }
-  public var base32HexDecodedData: Foundation.Data? {
-    get
-  }
-}
-public enum OTPAlgorithm {
-  case sha1
-  case sha256
-  case sha512
-  public static func == (a: DsToken.OTPAlgorithm, b: DsToken.OTPAlgorithm) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-final public class DsTokenProvider {
-  final public var environment: Swift.String
-  public enum Environment {
-    case DEVELOPMENT, QA, PRODUCTION
-    public static func == (a: DsToken.DsTokenProvider.Environment, b: DsToken.DsTokenProvider.Environment) -> Swift.Bool
-    public func hash(into hasher: inout Swift.Hasher)
-    public var hashValue: Swift.Int {
-      get
-    }
-  }
-  public init(environment: DsToken.DsTokenProvider.Environment)
-  final public func syncToken(channel: Swift.String, username: Swift.String, codeUser: Swift.String, deviceId: Swift.String, idPushToken: Swift.String, otp: Swift.String, syncDeviceResponse: @escaping (Swift.String, Swift.String) -> Swift.Void)
-  final public func reSyncToken(deviceId: Swift.String, reSyncTokenResponse: @escaping (Swift.String, Swift.String) -> Swift.Void)
-  final public func approveTransaction(channel: Swift.String, username: Swift.String, codeUser: Swift.String, uuid: Swift.String, transactionId: Swift.String, token: Swift.String, approveTransactionResponse: @escaping (Swift.String, Swift.String) -> Swift.Void)
-  final public func declineTransaction(channel: Swift.String, username: Swift.String, codeUser: Swift.String, uuid: Swift.String, transactionId: Swift.String, declineTransactionResponse: @escaping (Swift.String, Swift.String) -> Swift.Void)
-  final public func deleteToken(channel: Swift.String, username: Swift.String, codeUser: Swift.String, deleteTokenResponse: @escaping (Swift.String, Swift.String) -> Swift.Void)
-  final public func generateToken(channel: Swift.String, username: Swift.String, codeUser: Swift.String, generateTokenResponse: @escaping (Swift.String, Swift.String, Swift.String, Swift.String) -> Swift.Void)
-  @objc deinit
-}
-public struct ReSyncTokenModel : Swift.Codable {
-  public var deviceId: Swift.String
-  public var timeStamp: Swift.String
-  public init(deviceId: Swift.String, timeStamp: Swift.String)
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
-}
-public struct DeclineTransactionModel : Swift.Codable {
-  public var channel: Swift.String
-  public var username: Swift.String
-  public var codeUser: Swift.String
-  public var uuId: Swift.String
-  public var transactionId: Swift.String
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
-}
-@_inheritsConvenienceInitializers @objc(Token) public class Token : CoreData.NSManagedObject {
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  @objc deinit
-}
+public typealias TokenCoreDataPropertiesSet = Foundation.NSSet
 extension DsToken.Token {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<DsToken.Token>
-  @objc @NSManaged dynamic public var channel: Swift.String? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var channel: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var seed: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var country: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var user_code: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var id: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var username: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var seed: Swift.String? {
     @objc get
     @objc set
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var tokenName: Swift.String? {
+    @objc get
+    @objc set
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var userCode: Swift.String? {
+    @objc get
+    @objc set
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var userName: Swift.String? {
+    @objc get
+    @objc set
+  }
+  #endif
 }
 extension DsToken.Token : Swift.Identifiable {
-  public typealias ID = Swift.ObjectIdentifier
+  public typealias ID = Swift.String?
 }
-extension DsToken.OTPAlgorithm : Swift.Equatable {}
-extension DsToken.OTPAlgorithm : Swift.Hashable {}
-extension DsToken.DsTokenProvider.Environment : Swift.Equatable {}
-extension DsToken.DsTokenProvider.Environment : Swift.Hashable {}
+public typealias dbTokenFoundationFrameworkSet = Foundation.NSSet
+public typealias dbTokenCoreDataFrameworkManagedObject = CoreData.NSManagedObject
+extension DsToken.Environment : Swift.Equatable {}
+extension DsToken.Environment : Swift.Hashable {}
+extension DsToken.Environment : Swift.RawRepresentable {}
